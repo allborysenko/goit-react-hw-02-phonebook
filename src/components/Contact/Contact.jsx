@@ -18,6 +18,11 @@ export class Contact extends Component {
     const form = e.currentTarget;
     this.props.onSubmit(this.state);
     form.reset();
+
+    this.setState({
+      name: '',
+      number: '',
+    });
   };
 
   render() {
