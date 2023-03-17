@@ -13,7 +13,7 @@ export class Contact extends Component {
   handleSubmit = e => {
     e.preventDefault();
     this.props.addContact({
-      name: this.setState.name,
+      name: this.state.name,
     });
   };
 

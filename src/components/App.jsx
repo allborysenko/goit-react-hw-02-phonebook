@@ -1,5 +1,6 @@
 import { Component } from 'react';
 import { Contact } from './Contact/Contact';
+import { Section } from './Section/Section';
 
 
 export class App extends Component {
@@ -15,8 +16,12 @@ export class App extends Component {
 }
 
   render() {
-    return <>
-      <Contact onSubmit={this.addContact} />
-    </>;
+    return (
+      <>
+        <Section title="Phonebook" />
+        <Contact onSubmit={this.addContact} />
+        <Section title="Contacts" />
+      </>
+    );
   }
 }
